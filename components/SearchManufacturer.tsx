@@ -4,13 +4,13 @@ import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Combobox, Transition } from "@headlessui/react"; // koristimo headless-ui koji smo instalirali kao paket, da bi lakse kreirali search formu i ostale djelove //
 
-import { searchManufacturerProps } from "@/types";
+import { SearchManufacturerProps } from "@/types";
 import { manufacturers } from "@/constants";
 
 const SearchManufacturer = ({
   manufacturer,
   setManufacturer,
-}: searchManufacturerProps) => {
+}: SearchManufacturerProps) => {
   const [query, setQuery] = useState("");
 
   const filteredManufacturers =
@@ -25,7 +25,7 @@ const SearchManufacturer = ({
 
   return (
     <div className="search-manufacturer">
-      <Combobox>
+      <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative w-full">
           <Combobox.Button className="absolute top-[14px]">
             <Image
