@@ -31,3 +31,26 @@ export interface CarProps { // podaci za car //
     transmission: string;
     year: number;
 }
+
+export interface FilterProps {  // podaci za search bar, url //
+    manufacturer?: string;
+    year?: number;
+    fuel?: string;
+    limit?: number;
+    model?: string;
+}
+
+export interface OptionProps { // za search po gorivu i godini proizvodnje //
+    title: string;
+    value: string;
+}
+
+export interface CustomFilterProps { // za search po gorivu i godini proizvodnje //
+    title: string;
+    options: OptionProps[];
+}
+
+export interface ShowMoreProps {
+    pageNumber: number;
+    isNext: boolean;
+}
