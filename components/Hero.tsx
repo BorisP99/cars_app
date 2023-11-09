@@ -6,7 +6,7 @@ import Image from "next/image";
 import CustomButton from "./CustomButton";
 
 const Hero = () => {
-  const handleScroll = () => {}; // funkcija za dugme //
+  const handleScroll = () => {}; // funkcija za dugme Explore Cars //
 
   return (
     <div className="hero">

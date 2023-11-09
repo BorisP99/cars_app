@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Listbox, Transition } from "@headlessui/react";
 
 import { CustomFilterProps } from "@/types";
-import { updateSearchParams } from "@/utils";
 
 const CustomFilter = ({ title, options, setFilter }: CustomFilterProps) => {
   const [selected, setSelected] = useState(options[0]); // imamo options i uzimamo prvu da se prikaze, fuel ce biti Fuel, year ce biti odredjena godina //
