@@ -48,9 +48,11 @@ export interface OptionProps { // za search po gorivu i godini proizvodnje //
 export interface CustomFilterProps { // za search po gorivu i godini proizvodnje //
     title: string;
     options: OptionProps[];
+    setFilter: any;
 }
 
 export interface ShowMoreProps {
     pageNumber: number;
     isNext: boolean;
+    setLimit: any;
 }
